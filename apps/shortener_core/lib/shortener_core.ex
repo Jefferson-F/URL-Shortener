@@ -16,5 +16,4 @@ defmodule ShortenerCore do
     short_URL = Nanoid.generate(10)
     {:ok, {OriginalURL, short_URL}}
   end
-
 end

@@ -18,7 +18,7 @@ defmodule ShortenerCore.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :plug_cowboy],
       mod: {ShortenerCore.Application, []}
     ]
   end
@@ -31,7 +31,8 @@ defmodule ShortenerCore.MixProject do
       # {:sibling_app_in_umbrella, in_umbrella: true}
       {:nanoid, "~> 2.1.0"},
       {:ecto_sql, "~>3.0"},
-      {:postgrex, "~>0.20"}
+      {:postgrex, "~>0.20"},
+      {:plug_cowboy, "~>2.7.3"}
     ]
   end
 end
