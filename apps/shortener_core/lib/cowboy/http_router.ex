@@ -19,7 +19,7 @@ defmodule Cowboy.HttpRouter do
   end
 
   post "/encurtar" do
-    GenServer.call(ShortenerServer, {:shorten_url, long_url})
+    #GenServer.call(ShortenerServer, {:shorten_url, long_url})
   end
 
   match _ do
