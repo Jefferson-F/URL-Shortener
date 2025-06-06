@@ -8,7 +8,5 @@ defmodule Cowboy.HttpShort do
   end
 
   def child_spec() do
-
   end
-
 end

@@ -12,7 +12,7 @@ defmodule ShortenerCore do
       :world
 
   """
-  def shorten_url(OriginalURL) do
+  def shorten_url(long_url) do
     short_URL = Nanoid.generate(10)
     {:ok, {OriginalURL, short_URL}}
   end
